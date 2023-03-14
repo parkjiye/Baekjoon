@@ -14,4 +14,4 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 
 |날짜/일차|구현|DFS|이분탐색|그리디|BFS|정렬|시뮬|백트래킹|트리|DP|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|230314| | |||[2638](https://www.acmicpc.net/problem/2638)||||||
+|230314|[2638](https://www.acmicpc.net/problem/2638) | |||[2638](https://www.acmicpc.net/problem/2638)||[2638](https://www.acmicpc.net/problem/2638)||||
