@@ -31,3 +31,7 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230316||||||||||||[최댓값과 최소값](https://school.programmers.co.kr/learn/courses/30/lessons/12939)|
 |230318|||||[네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)||||||||
 
+# SQL
+|날짜/일차|SELECT|SUM, MAX, MIN|GROUP BY|IS NULL|JOIN|String, Date|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|230319|[3월에 태어난 여성 회원 목록 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/131120)||||||
