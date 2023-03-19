@@ -1,5 +1,5 @@
 #include <iostream>
-#define FASTIO ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
+#define FASTIO() ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
 using namespace std;
 
@@ -49,6 +49,8 @@ void print_tree(Node *node)
 
 int main()
 {
+    FASTIO();
+
     int x;
     cin >> x;
 
