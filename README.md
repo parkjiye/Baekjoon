@@ -41,3 +41,4 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |230318|[3월에 태어난 여성 회원 목록 출력하기](https://school.programmers.co.kr/learn/courses/30/lessons/131120)||||||
 |230319|||||[과일로 만든 아이스크림 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/133025)||
+|230320|[조건에 부합하는 중고거래 댓글 조회](https://school.programmers.co.kr/learn/courses/30/lessons/164673)||||||
