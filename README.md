@@ -20,6 +20,7 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230317||||||||[15654](https://www.acmicpc.net/problem/15654)||||
 |230318||||||||[15657](https://www.acmicpc.net/problem/15657)||||
 |230319||||||||[15663](https://www.acmicpc.net/problem/15663)|[5639](https://www.acmicpc.net/problem/5639)||[1753](https://www.acmicpc.net/problem/1753)|
+|230320||||||||||[2096](https://www.acmicpc.net/problem/2096)||
 
 
 # Programmers
@@ -32,6 +33,8 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230316||||||||||||[최댓값과 최소값](https://school.programmers.co.kr/learn/courses/30/lessons/12939)|
 |230318|||||[네트워크](https://school.programmers.co.kr/learn/courses/30/lessons/43162)||||||||
 |230319||||||||||[정수삼각형](https://school.programmers.co.kr/learn/courses/30/lessons/43105)|||
+|230320|||||[가장 먼 노드](https://school.programmers.co.kr/learn/courses/30/lessons/49189)||||||||
+
 
 # SQL
 |날짜/일차|SELECT|SUM, MAX, MIN|GROUP BY|IS NULL|JOIN|String, Date|
