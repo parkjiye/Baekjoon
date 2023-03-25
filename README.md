@@ -50,4 +50,5 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230319|||||[과일로 만든 아이스크림 고르기](https://school.programmers.co.kr/learn/courses/30/lessons/133025)||
 |230320|[조건에 부합하는 중고거래 댓글 조회](https://school.programmers.co.kr/learn/courses/30/lessons/164673)||||||
 |230321|[아픈 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)||||||
+|230325|[12세 이하 여자 환자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/132201)||||||
 
