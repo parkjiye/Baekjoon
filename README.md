@@ -26,6 +26,7 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230323|||||||||[1167](https://www.acmicpc.net/problem/1167)|||
 |230324||||||||||[11660](https://www.acmicpc.net/problem/11660)||
 |230325||||||||||[1932](https://www.acmicpc.net/problem/1932)||
+|230326|||||[1043](https://www.acmicpc.net/problem/1043)|||||||
 
 
 
@@ -51,4 +52,5 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230320|[조건에 부합하는 중고거래 댓글 조회](https://school.programmers.co.kr/learn/courses/30/lessons/164673)||||||
 |230321|[아픈 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)||||||
 |230325|[12세 이하 여자 환자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/132201)||||||
+|230326|[특정 의사 출력](https://school.programmers.co.kr/learn/courses/30/lessons/132203)||||||
 
