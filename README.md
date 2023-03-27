@@ -27,7 +27,7 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230324||||||||||[11660](https://www.acmicpc.net/problem/11660)||
 |230325||||||||||[1932](https://www.acmicpc.net/problem/1932)||
 |230326|||||[G4 - 거짓말](https://www.acmicpc.net/problem/1043)|||||||
-|230327||||||||||[S1 - RGB거리](https://www.acmicpc.net/problem/1149)||
+|230327||||||||||[S1 - RGB거리](https://www.acmicpc.net/problem/1149)|[G3 - 파티](https://www.acmicpc.net/problem/1238)|
 
 
 # Programmers
@@ -53,4 +53,4 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230321|[아픈 동물 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/59036)||||||
 |230325|[12세 이하 여자 환자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/132201)||||||
 |230326|[특정 의사 출력](https://school.programmers.co.kr/learn/courses/30/lessons/132203)||||||
-
+|230327||[가격이 제일 비싼 제품](https://school.programmers.co.kr/learn/courses/30/lessons/131115)|||||
