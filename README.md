@@ -12,7 +12,7 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=luna7182)](https://solved.ac/luna7182/)
 
-|날짜/일차|구현|DFS|이분탐색|그리디|BFS|정렬|시뮬|백트래킹|트리|DP|다익스트라|
+|날짜/일차|구현|DFS|이분탐색|그리디|BFS|정렬|시뮬|백트래킹|트리|DP|그래프|
 |:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
 |230314|[2638](https://www.acmicpc.net/problem/2638) | |||[2638](https://www.acmicpc.net/problem/2638)||[2638](https://www.acmicpc.net/problem/2638)|||||
 |230315|||||||||||[11779](https://www.acmicpc.net/problem/11779)|
@@ -28,6 +28,8 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230325||||||||||[1932](https://www.acmicpc.net/problem/1932)||
 |230326|||||[G4 - 거짓말](https://www.acmicpc.net/problem/1043)|||||||
 |230327||||||||||[S1 - RGB거리](https://www.acmicpc.net/problem/1149)|[G3 - 파티](https://www.acmicpc.net/problem/1238)|
+|230329||||||||||[S3 - 퇴사](https://www.acmicpc.net/problem/14501)||
+|230330|[G5 - 마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610)||||||||||[G4 - 타임머신](https://www.acmicpc.net/problem/11657)|
 
 
 # Programmers
@@ -54,3 +56,4 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230325|[12세 이하 여자 환자 찾기](https://school.programmers.co.kr/learn/courses/30/lessons/132201)||||||
 |230326|[특정 의사 출력](https://school.programmers.co.kr/learn/courses/30/lessons/132203)||||||
 |230327||[가격이 제일 비싼 제품](https://school.programmers.co.kr/learn/courses/30/lessons/131115)|||||
+|230330||[조건에 맞는 도서](https://school.programmers.co.kr/learn/courses/30/lessons/144853)|||||
