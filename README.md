@@ -30,6 +30,8 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230327||||||||||[S1 - RGB거리](https://www.acmicpc.net/problem/1149)|[G3 - 파티](https://www.acmicpc.net/problem/1238)|
 |230329||||||||||[S3 - 퇴사](https://www.acmicpc.net/problem/14501)||
 |230330|[G5 - 마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610)||||||||||[G4 - 타임머신](https://www.acmicpc.net/problem/11657)|
+|230331||||||||||[S2 - 가장 긴 증가하는 부분수열](https://www.acmicpc.net/problem/11053)||
+|230401|[G3 - 나무 재테크](https://www.acmicpc.net/problem/16235)||||||||||[G3 - 웜홀](https://www.acmicpc.net/problem/1865)|
 
 
 # Programmers
