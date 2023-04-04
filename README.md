@@ -12,28 +12,30 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=luna7182)](https://solved.ac/luna7182/)
 
-|날짜/일차|구현|DFS|이분탐색|그리디|BFS|정렬|시뮬|백트래킹|트리|DP|그래프|기타|
-|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
-|230314|[2638](https://www.acmicpc.net/problem/2638) | |||[2638](https://www.acmicpc.net/problem/2638)||[2638](https://www.acmicpc.net/problem/2638)|||||
-|230315|||||||||||[11779](https://www.acmicpc.net/problem/11779)|
-|230316|||||||||||[1504](https://www.acmicpc.net/problem/1504) [🔑](https://velog.io/@luna7182/Baekjoon-1504.-%ED%8A%B9%EC%A0%95%ED%95%9C-%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C)|
-|230317||||||||[15654](https://www.acmicpc.net/problem/15654)||||
-|230318||||||||[15657](https://www.acmicpc.net/problem/15657)||||
-|230319||||||||[15663](https://www.acmicpc.net/problem/15663)|[5639](https://www.acmicpc.net/problem/5639)||[1753](https://www.acmicpc.net/problem/1753)|
-|230320||||||||||[2096](https://www.acmicpc.net/problem/2096)||
-|230321||||||||[15666](https://www.acmicpc.net/problem/15666)|||[1916](https://www.acmicpc.net/problem/1916)|
-|230322||[1967](https://www.acmicpc.net/problem/1967)|||[11725](https://www.acmicpc.net/problem/11725)|||||||
-|230323|||||||||[1167](https://www.acmicpc.net/problem/1167)|||
-|230324||||||||||[11660](https://www.acmicpc.net/problem/11660)||
-|230325||||||||||[1932](https://www.acmicpc.net/problem/1932)||
-|230326|||||[G4 - 거짓말](https://www.acmicpc.net/problem/1043)|||||||
-|230327||||||||||[S1 - RGB거리](https://www.acmicpc.net/problem/1149)|[G3 - 파티](https://www.acmicpc.net/problem/1238)|
-|230329||||||||||[S3 - 퇴사](https://www.acmicpc.net/problem/14501)||
-|230330|[G5 - 마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610)||||||||||[G4 - 타임머신](https://www.acmicpc.net/problem/11657)|
-|230331||||||||||[S2 - 가장 긴 증가하는 부분수열](https://www.acmicpc.net/problem/11053)||
-|230401|[G3 - 나무 재테크](https://www.acmicpc.net/problem/16235)||||||||||[G3 - 웜홀](https://www.acmicpc.net/problem/1865)|
-|230402||||||||||||[G2 - 후위표기식](https://www.acmicpc.net/problem/1918)|
-|230403|[G5 - 컨베이어 벨트 위의 로봇](https://www.acmicpc.net/problem/20055)|||||||||||
+|날짜/일차|DFS|이분탐색|그리디|BFS|정렬|시뮬|백트래킹|트리|DP|그래프|기타|
+|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|:--:|
+|230314||||[2638](https://www.acmicpc.net/problem/2638)||[2638](https://www.acmicpc.net/problem/2638)|||||
+|230315||||||||||[11779](https://www.acmicpc.net/problem/11779)|
+|230316||||||||||[1504](https://www.acmicpc.net/problem/1504) [🔑](https://velog.io/@luna7182/Baekjoon-1504.-%ED%8A%B9%EC%A0%95%ED%95%9C-%EC%B5%9C%EB%8B%A8-%EA%B2%BD%EB%A1%9C)|
+|230317|||||||[15654](https://www.acmicpc.net/problem/15654)||||
+|230318|||||||[15657](https://www.acmicpc.net/problem/15657)||||
+|230319|||||||[15663](https://www.acmicpc.net/problem/15663)|[5639](https://www.acmicpc.net/problem/5639)||[1753](https://www.acmicpc.net/problem/1753)|
+|230320|||||||||[2096](https://www.acmicpc.net/problem/2096)||
+|230321|||||||[15666](https://www.acmicpc.net/problem/15666)|||[1916](https://www.acmicpc.net/problem/1916)|
+|230322|[1967](https://www.acmicpc.net/problem/1967)|||[11725](https://www.acmicpc.net/problem/11725)|||||||
+|230323||||||||[1167](https://www.acmicpc.net/problem/1167)|||
+|230324|||||||||[11660](https://www.acmicpc.net/problem/11660)||
+|230325|||||||||[1932](https://www.acmicpc.net/problem/1932)||
+|230326||||[G4 - 거짓말](https://www.acmicpc.net/problem/1043)|||||||
+|230327|||||||||[S1 - RGB거리](https://www.acmicpc.net/problem/1149)|[G3 - 파티](https://www.acmicpc.net/problem/1238)|
+|230329|||||||||[S3 - 퇴사](https://www.acmicpc.net/problem/14501)||
+|230330||||||[G5 - 마법사 상어와 비바라기](https://www.acmicpc.net/problem/21610)||||[G4 - 타임머신](https://www.acmicpc.net/problem/11657)|
+|230331|||||||||[S2 - 가장 긴 증가하는 부분수열](https://www.acmicpc.net/problem/11053)||
+|230401||||||[G3 - 나무 재테크](https://www.acmicpc.net/problem/16235)||||[G3 - 웜홀](https://www.acmicpc.net/problem/1865)|
+|230402|||||||||||[G2 - 후위표기식](https://www.acmicpc.net/problem/1918)|
+|230403||||||[G5 - 컨베이어 벨트 위의 로봇](https://www.acmicpc.net/problem/20055), [G2 - 청소년 상어](https://www.acmicpc.net/problem/19236)|||||
+|230403||||||[G3 - 마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058)|||||
+
 
 
 # Programmers
