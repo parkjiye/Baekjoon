@@ -35,6 +35,7 @@ Baekjoon, SW Expert Academy, Programmers 코테 문제 풀이집
 |230402|||||||||||[G2 - 후위표기식](https://www.acmicpc.net/problem/1918)|
 |230403||||||[G5 - 컨베이어 벨트 위의 로봇](https://www.acmicpc.net/problem/20055), [G2 - 청소년 상어](https://www.acmicpc.net/problem/19236)|||||
 |230403||||||[G3 - 마법사 상어와 파이어스톰](https://www.acmicpc.net/problem/20058)|||||
+|230404||||||[G3 - 주사위 굴리기2](https://www.acmicpc.net/problem/23288)|||||
 
 
 
