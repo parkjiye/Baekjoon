@@ -269,15 +269,6 @@ void move(int cnt)
             myMap[i][j] = copy[i][j];
         }
     }
-
-    // for (int i = 0; i < N; i++)
-    // {
-    //     for (int j = 0; j < N; j++)
-    //     {
-    //         cout << temp[i][j] << " ";
-    //     }
-    //     cout << endl;
-    // }
 }
 
 int main()
