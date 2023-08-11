@@ -1,27 +1,30 @@
 #include <iostream>
-#define FASTIO() ios_base::sync_with_stdio(false), cin.tie(NULL), cout.tie(NULL)
 
 using namespace std;
 
 int N;
-int operands[11];
-int operators[4];
+long long int max_ans = -1000000001;
+long long int min_ans = 1000000001;
 
-long long int ans_max = -1000000001;
-long long int ans_min = 1000000001;
+int operands[12] = {
+    0,
+};
+int operators[4] = {
+    0,
+};
 
-void back_tracking(long long int val, int idx)
+void backtracking(int idx, int val)
 {
     if (idx == N)
     {
-        if (val > ans_max)
+        if (val > max_ans)
         {
-            ans_max = val;
+            max_ans = val;
         }
 
-        if (val < ans_min)
+        if (val < min_ans)
         {
-            ans_min = val;
+            min_ans = val;
         }
 
         return;
@@ -35,19 +38,19 @@ void back_tracking(long long int val, int idx)
 
             if (i == 0)
             {
-                back_tracking(val + operands[idx], idx + 1);
+                backtracking(idx + 1, val + operands[idx]);
             }
             else if (i == 1)
             {
-                back_tracking(val - operands[idx], idx + 1);
+                backtracking(idx + 1, val - operands[idx]);
             }
             else if (i == 2)
             {
-                back_tracking(val * operands[idx], idx + 1);
+                backtracking(idx + 1, val * operands[idx]);
             }
             else
             {
-                back_tracking(val / operands[idx], idx + 1);
+                backtracking(idx + 1, val / operands[idx]);
             }
 
             operators[i] += 1;
@@ -57,7 +60,6 @@ void back_tracking(long long int val, int idx)
 
 int main()
 {
-    FASTIO();
     cin >> N;
 
     for (int i = 0; i < N; i++)
@@ -72,12 +74,11 @@ int main()
     {
         int x;
         cin >> x;
-
         operators[i] = x;
     }
 
-    back_tracking(operands[0], 1);
+    backtracking(1, operands[0]);
 
-    cout << ans_max << endl;
-    cout << ans_min << endl;
+    cout << max_ans << endl;
+    cout << min_ans << endl;
 }
