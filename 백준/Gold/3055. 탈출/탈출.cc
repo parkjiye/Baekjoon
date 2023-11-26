@@ -18,7 +18,6 @@ struct p
 };
 
 p cockroach;
-queue<p> water;
 queue<p> ck;
 
 int R, C;
@@ -28,42 +27,6 @@ int dy[4] = {0, 0, -1, 1};
 char myMap[55][55];
 bool visited[55][55];
 
-void print()
-{
-    for (int i = 0; i < R; i++)
-    {
-        for (int j = 0; j < C; j++)
-        {
-            cout << myMap[i][j] << " ";
-        }
-        cout << endl;
-    }
-}
-
-queue<p> waterflow(queue<p> w)
-{
-    queue<p> temp;
-    while (!w.empty())
-    {
-        p cur = w.front();
-        w.pop();
-
-        for (int k = 0; k < 4; k++)
-        {
-            int next_x = cur.x + dx[k];
-            int next_y = cur.y + dy[k];
-
-            if (next_x >= 0 && next_y >= 0 && next_x < R && next_y < C && myMap[next_x][next_y] != 'D' && myMap[next_x][next_y] != 'X')
-            {
-                temp.push(p(next_x, next_y));
-                myMap[next_x][next_y] = '*';
-            }
-        }
-    }
-
-    return temp;
-}
-
 int bfs()
 {
     ck.push(cockroach);
@@ -71,9 +34,6 @@ int bfs()
 
     while (!ck.empty())
     {
-        // water = waterflow(water);
-        //  print();
-
         p cur = ck.front();
         ck.pop();
 
