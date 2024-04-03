@@ -5,13 +5,19 @@
 
 using namespace std;
 
+long dist[205][205];
 
 int solution(int n, int s, int a, int b, vector<vector<int>> fares) {
     
-    vector<vector<long>> dist(n+1, vector<long>(n+1, INT_MAX));
-    
     for(int i=1;i<=n;i++){
-        dist[i][i]=0;
+        for(int j=1;j<=n;j++){
+            if(i==j){
+                dist[i][j]=0;
+            }
+            else{
+                dist[i][j]=INT_MAX;
+            }
+        }
     }
     
     for(int i=0;i<fares.size();i++){
@@ -24,20 +30,27 @@ int solution(int n, int s, int a, int b, vector<vector<int>> fares) {
     for(int i=1;i<=n;i++) {
         for(int j=1;j<=n;j++){
             for(int k=1;k<=n;k++){
-                if(dist[j][i]!=INT_MAX && dist[i][k]!=INT_MAX && dist[j][k]>dist[j][i]+dist[i][k]){
-                    dist[j][k]=dist[j][i]+dist[i][k];
+                if(dist[i][j]!=INT_MAX && dist[j][k]!=INT_MAX && dist[i][k]>dist[i][j]+dist[j][k]){
+                    dist[i][k]=dist[i][j]+dist[j][k];
                 }
             }
         }
     }
     
     long answer = dist[s][a]+dist[s][b];
-
+    
     for(int i=1;i<=n;i++){
-        long together = dist[s][i]+dist[i][a]+dist[i][b];
-        answer = min(answer, together);
+        if(i!=s){
+            
+            long together = dist[s][i];
+            long total = together + dist[i][a]+dist[i][b];
+            
+            //cout<<i<<" "<<total<<"\n";
+            
+            if(total<answer){
+                answer = total;
+            }
+        }
     }
-
     return answer;
-
 }
