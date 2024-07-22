@@ -5,39 +5,38 @@
 
 using namespace std;
 
-int N;
 vector<pair<int, int>> v;
-vector<int> dp;
+int sum[1500005] = {
+    0,
+};
 
 int main()
 {
     FASTIO();
+
+    int N;
     cin >> N;
+    v.push_back({0, 0});
 
-    dp.resize(N + 1, 0);
-    v.resize(N + 1);
-
-    for (int i = 1; i <= N; i++)
+    for (int i = 0; i < N; i++)
     {
-        int d, t;
-        cin >> d >> t;
-        v[i] = {d, t};
+        int t, p;
+        cin >> t >> p;
+
+        v.push_back({t, p});
     }
 
     for (int i = 1; i <= N; i++)
     {
-        // 이전 단계에서의 최대 수익을 유지
-        dp[i] = max(dp[i], dp[i - 1]);
+        sum[i] = max(sum[i - 1], sum[i]);
 
-        int end_day = i + v[i].first - 1;
-        if (end_day <= N)
+        if (v[i].first + i - 1 > N)
         {
-            // 현재 작업을 수행하는 경우와 하지 않는 경우 중 최대값 선택
-            dp[end_day] = max(dp[end_day], dp[i - 1] + v[i].second);
+            continue;
         }
+
+        sum[i + v[i].first - 1] = max(sum[i - 1] + v[i].second, sum[i + v[i].first - 1]);
     }
 
-    cout << *max_element(dp.begin(), dp.end()) << "\n";
-
-    return 0;
+    cout << sum[N] << "\n";
 }
