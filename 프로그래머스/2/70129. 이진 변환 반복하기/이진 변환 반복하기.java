@@ -1,30 +1,25 @@
 class Solution {
-    public int[] solution(String s) {
-        int[] answer = new int[2];
-        
+    
+    public int[] solution(String str) {
         int cnt=0;
-        int trn=0;
+        int loop=0;
         
-        while(!s.equals("1")) {
+        while(!str.equals("1")){
             StringBuilder sb = new StringBuilder();
-            for(char c: s.toCharArray()) {
-                if(c=='0') {
-                    cnt+=1;
-                    continue;
-                }
-                else
-                {
-                    sb.append(c);                    
-                }
+        
+            for(int i=0;i<str.length();i++){
+                if(str.charAt(i)=='1') sb.append('1');
+                else cnt+=1;
             }
-            
-            int c = sb.toString().length();
-            s = Integer.toString(c, 2);
-            //System.out.println(s);
-            trn+=1;
+        
+            str = sb.toString();
+            str = Integer.toBinaryString(str.length());
+            loop+=1;
+            //System.out.println(str);
         }
-        answer[0]=trn;
-        answer[1]=cnt;
+        
+        
+        int[] answer = {loop, cnt};
         return answer;
     }
 }
