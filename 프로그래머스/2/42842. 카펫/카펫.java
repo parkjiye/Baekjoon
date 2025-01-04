@@ -1,16 +1,16 @@
 class Solution {
     public int[] solution(int brown, int yellow) {
-        int[] answer = {};
+        int[] answer = new int[2];
+        int outer = brown/2+1;
         
-        for(int i=1;i<=5000;i++) {
-            for(int j=i;j<=5000;j++) {
-                
-                int b = (j+i-2)*2;
-                int y = i*j-b;
-                
-                if(brown==b && yellow==y) {
-                    answer = new int[] {j, i};
-                }
+        for(int i=3;i<=outer-i+1;i++) {
+            int col = i;
+            int row = outer-i+1;
+            //System.out.println(col + " "+row);
+            
+            if((col-2)*(row-2)==yellow) {
+                answer[0]=row;
+                answer[1]=col;
             }
         }
         
