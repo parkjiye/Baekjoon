@@ -1,92 +1,67 @@
+import java.util.*;
+
 class Solution {
-    private static final int[] dx={-1, 1, 0, 0};
-    private static final int[] dy={0, 0, -1, 1};
+    private static int[] dx={-1, 1, 0, 0};
+    private static int[] dy={0, 0, -1, 1};
     
-    private static final int[] mx={-1, 1, 1, -1};
-    private static final int[] my={1, 1, -1, -1};
+    private char[][] map;
     
-    public int findRoom(char[][] arr) {
+    public boolean checkParticipant(int x, int y, int d) {
         
-        for(int i=0;i<5;i++) {
+        int t;
+        if(d%2==0) t=d+1;
+        else t=d-1;
+        for(int k=0;k<4;k++) {
+            if(k!=t) {
+                int next_x = x+dx[k];
+                int next_y = y+dy[k];
+                
+                if(next_x>=0 && next_x<5 && next_y>=0 && next_y<5) {
+                    if(map[next_x][next_y]=='P') return false;
+                }
+                
+            }
+        }
+        return true;
+    }
+    
+    public boolean checkPartition(int x, int y) {
+        for(int k=0;k<4;k++){
+            int next_x = x+dx[k];
+            int next_y = y+dy[k];
+            
+            if(next_x>=0 && next_x<5 && next_y>=0 && next_y<5) {
+                if(map[next_x][next_y]=='P') return false;
+                else if(map[next_x][next_y]=='O') {
+                    if(!checkParticipant(next_x, next_y, k)) return false;
+                }
+            }
+        }
+        return true;
+    }
+    
+    public int[] solution(String[][] places) {
+        
+        int[] answer = new int[places.length];
+        Arrays.fill(answer, 1);
+        
+        for(int i=0;i<places.length;i++) {
+            map = new char[5][5];
+            for(int j=0;j<5;j++) {
+                map[j]=places[i][j].toCharArray();
+            }
             
             for(int j=0;j<5;j++) {
-                
-                if(arr[i][j]=='P') {
-                    //상하좌우 탐색
-                    for(int k=0;k<4;k++) {
-                        
-                        int nx = i+dx[k];
-                        int ny = j+dy[k];
-                            
-                        if(nx>=0 && ny>=0 && nx<5 && ny<5) {
-                            if(arr[nx][ny]=='P') {
-                                return 0;
-                            }
-                        }
-                    }
-                    
-                    for(int k=0;k<4;k++) {
-                        int nx = i+dx[k]*2;
-                        int ny = j+dy[k]*2;
-                        
-                        if(nx>=0 && ny>=0 && nx<5 && ny<5)
-                        {
-                            if(arr[nx][ny]=='P'&& arr[nx-dx[k]][ny-dy[k]]=='O')
-                            {
-                                return 0;
-                            }
-                        }
-                    }
-                    
-                    for(int k=0;k<4;k++) {
-                        int nx=i+mx[k];
-                        int ny=j+my[k];
-                        
-                        if(nx>=0 && ny>=0 && nx<5 && ny<5) {
-                            if(arr[nx][ny]=='P')
-                            {
-                                if(k==0&&arr[nx][ny-1]=='X'&&arr[nx+1][ny]=='X')
-                                {
-                                    continue;
-                                }
-                                if(k==1&&arr[nx-1][ny]=='X'&&arr[nx][ny-1]=='X')
-                                {
-                                    continue;
-                                }
-                                if(k==2&&arr[nx][ny+1]=='X'&&arr[nx-1][ny]=='X')
-                                {
-                                    continue;
-                                }
-                                if(k==3&&arr[nx][ny+1]=='X'&&arr[nx+1][ny]=='X')
-                                {
-                                    continue;
-                                }
-                                else {
-                                    return 0;
-                                }
-                            }
+                for(int k=0;k<5;k++) {
+                    if(map[j][k]=='P') {
+                        if(!checkPartition(j, k)) {
+                            answer[i]=0;
                         }
                     }
                 }
             }
         }
         
-        return 1;
-    }
-    
-    public int[] solution(String[][] places) {
-        int[] answer = new int[5];
-                
-        for(int r=0;r<5;r++)
-        {
-            char[][] arr = new char[5][5];
-            for(int i=0;i<5;i++)
-            {
-                arr[i]=places[r][i].toCharArray();
-            }
-            
-            answer[r]=findRoom(arr);
-        }
         
         return answer;
     }
