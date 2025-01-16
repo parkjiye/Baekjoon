@@ -1,23 +1,16 @@
 class Solution {
     public int[] solution(long n) {
-        StringBuilder sb = new StringBuilder();
-        String s = Long.toString(n);
         
-        for(int i=0;i<s.length();i++) {
-            sb.append(s.charAt(i));
-        }
-        
+        StringBuilder sb = new StringBuilder(Long.toString(n));
         sb = sb.reverse();
-        s = sb.toString();
+        String s = sb.toString();
         
-        char[] arr= new char[s.length()];
-        arr = s.toCharArray();
-        int[] answer = new int[s.length()];
+        char[] arr = s.toCharArray();
+        int[] answer = new int[arr.length];
         
-        for(int i=0;i<arr.length;i++) {
-            answer[i]=arr[i]-'0';
+        for(int i=0;i<arr.length;i++){
+            answer[i]=Character.getNumericValue(arr[i]);
         }
-        
         
         return answer;
     }
