@@ -1,54 +1,28 @@
 class Solution {
-    public String changeString(String s) {
-        StringBuilder sb = new StringBuilder();
-        int i=0;
-        for(char c: s.toCharArray()) {
-            if(i%2==0){
-                if(Character.isLowerCase(c)) {
-                    sb.append(Character.toUpperCase(c));
-                }
-                else {
-                    sb.append(c);
-                }
-            }
-            else {
-                if(Character.isUpperCase(c)) {
-                    sb.append(Character.toLowerCase(c));
-                }
-                else {
-                    sb.append(c);
-                }
-            }
-            i+=1;
-        }
-        return sb.toString();
-    }
-    
     public String solution(String s) {
-        String answer = "";
-        StringBuilder sb = new StringBuilder();
-        StringBuilder ans = new StringBuilder();
         
-        for(char c : s.toCharArray()) {
-            if(!Character.isAlphabetic(c)) {
-                if(sb.length()>=1) {
-                    ans.append(changeString(sb.toString()));
-                    sb = new StringBuilder();
-                    ans.append(' ');
-                }
-                else {
-                    ans.append(' ');
-                }
+        StringBuilder sb = new StringBuilder();
+        char[] arr = s.toCharArray();
+        
+        int wordcnt=0;
+        
+        for(int i=0;i<arr.length;i++) {
+            if(arr[i]==' ') {
+                sb.append(' ');
+                wordcnt=0;
+            }
+            else if(wordcnt%2==0) {
+                sb.append(Character.toUpperCase(arr[i]));
+                wordcnt+=1;
             }
             else {
-                sb.append(c);
+                sb.append(Character.toLowerCase(arr[i]));
+                wordcnt+=1;
             }
+            
         }
         
-        if(sb.length()>=1) {
-            ans.append(changeString(sb.toString()));
-        }
-        
-        return ans.toString();
+        String answer = sb.toString();
+        return answer;
     }
 }
