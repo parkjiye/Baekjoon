@@ -1,64 +1,40 @@
+import java.lang.Math;
+
 class Solution {
     public int solution(String s) {
-        int answer = 10000;
-        
-        for(int i=1;i<=s.length();i++)
-        {
+        int answer = Integer.MAX_VALUE;
+        char[] arr = s.toCharArray();
+        if(s.length()==1) answer=1;
+        for(int i=1;i<s.length();i++){
             StringBuilder sb = new StringBuilder();
-            String temp = s.substring(0, i);
-            //System.out.println(temp);
-            
-            int num=1;
-            
-            for(int j=i;j<s.length();j+=i)
-            {
-                
-                if(j+i>s.length())
-                {
-                    sb.append(s.substring(j));
-                    break;
+            String s1 = s.substring(0, i);
+            int cnt=1;
+            for(int j=i;j<s.length();j+=i){
+                String s2;
+                if(j+i>s.length()) s2 = s.substring(j);
+                else s2 = s.substring(j, j+i);
+                if(s1.equals(s2)) {
+                    cnt+=1;
                 }
-                
-                String cmp = s.substring(j, j+i);
-                
-                //System.out.println(temp + " "+ cmp + " " + num);
-                if(cmp.equals(temp))
-                {
-                    num+=1;    
-                }
-                else
-                {
-                    if(num>1)
-                    {
-                        sb.append(Integer.toString(num));
-                        sb.append(temp);
+                else {
+                    if(cnt==1) {
+                        sb.append(s1);
                     }
-                    else
-                    {
-                        sb.append(temp);
+                    else {
+                        sb.append(Integer.toString(cnt));
+                        sb.append(s1);
                     }
-                    num=1;
-                    
-                    temp=cmp;
+                    s1 = s2;
+                    cnt=1;
                 }
             }
-            
-            if(num>1)
-            {
-                sb.append(Integer.toString(num));
-                sb.append(temp);
+            if(cnt==1) sb.append(s1);
+            else {
+                sb.append(Integer.toString(cnt));
+                sb.append(s1);
             }
-            else
-            {
-                sb.append(temp);
-            }
-            
             //System.out.println(sb.toString());
-            
-            if(sb.toString().length()<answer)
-            {
-                answer = sb.toString().length();
-            }
+            answer = Math.min(answer, sb.toString().length());
         }
         return answer;
     }
