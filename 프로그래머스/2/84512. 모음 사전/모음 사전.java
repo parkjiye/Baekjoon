@@ -1,38 +1,27 @@
-import java.util.List;
-import java.util.ArrayList;
+import java.util.*;
 
 class Solution {
+    private String[] vowel = {"A", "E", "I", "O", "U"};
+    private static List<String> mylist = new ArrayList<>();
     
-    List<String> arr = new ArrayList<>();
-    char[] vowel={'A','E','I','O','U'};
-    
-    private void backtracking(int idx, String s) {
-        
-        if(idx==5) {
-            return;
+    private void makeDict(String s, int idx) {
+        if(idx==4) {
+            for(int i=0;i<5;i++) {
+                String tmp = s+vowel[i];
+                mylist.add(tmp);
+            }
         }
         else {
             for(int i=0;i<5;i++) {
-                arr.add(s+vowel[i]);
-                backtracking(idx+1, s+vowel[i]);
+                String tmp = s+vowel[i];
+                mylist.add(tmp);
+                makeDict(tmp, idx+1);
             }
         }
     }
+    
     public int solution(String word) {
-        int answer = 0;
-        int cnt = 1;
-        
-        backtracking(0, "");
-        
-        for(String s:arr) {
-            if(s.equals(word)) {
-                answer = cnt;
-                break;
-            }
-            else {
-                cnt+=1;
-            }
-        }
-        return answer;
+        makeDict("", 0);
+        return mylist.indexOf(word)+1;
     }
 }
